@@ -133,6 +133,8 @@ export function App() {
                 placeholder="Digite seu endereço..."
                 classNamePrefix="filter"
                 cacheOptions
+                loadingMessage={() => "Carregando.."}
+                noOptionsMessage={() => "Opção não encontrada"}
                 loadOptions={loadOptions}
                 onChange={handleChangeSelect}
                 value={address}
